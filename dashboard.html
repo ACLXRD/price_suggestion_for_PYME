@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dashboard.css">    
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-Box1">
+            <button class="btnHome">
+                <i class="bi bi-house-fill"></i>
+            </button>
+        </div>
+        <div class="nav-Box2">
+            <h1>Análisis de Inventario</h1>
+        </div>
+    </nav>
+    <main>
+        <section id="dailyPromotions">
+            <div class="dp-box1">
+                <h2>Promociones sugeridas</h2>
+                <button class="btn" id="verMasDP">
+                    <span>Ver más</span>
+                    <i class="bi bi-plus-circle mx-2"></i>
+                </button>
+            </div>
+            <article id="container-dpCard">
+                <div class="dpCard" id="dpCard1">
+                    <div class="cardTxt">
+                        <p class="dpType" id="startProducto">Producto estrella</p>
+                        <h3 class="dpProduct" id="productNameS">Mortadela: $3.500</h3>
+                        <p class="dpBefore" id="productDescS">Antes $4.000. Descuento de $500</p>
+                        <p class="dpRef" id="productRefS">Ref: 152 - Rica mortadela</p>
+                    </div>
+                    <div class="cardBtn">
+                        <button class="btn">
+                            <i class="bi bi-check-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dpCard" id="dpCard1">
+                    <div class="cardTxt">
+                        <p class="dpType" id="expProducto">Próximo a vencer</p>
+                        <h3 class="dpProduct" id="productNameE">Pan integral: $2.000</h3>
+                        <p class="dpBefore" id="productDescE">Antes $3.400. Descuento de $1.400</p>
+                        <p class="dpRef" id="productRefE">Ref: 232 - Pan integral Bimbo</p>
+                    </div>
+                    <div class="cardBtn">
+                        <button class="btn">
+                            <i class="bi bi-check-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dpCard" id="dpCard1">
+                    <div class="cardTxt">
+                        <p class="dpType" id="dayProducto">Destacado para hoy</p>
+                        <h3 class="dpProduct" id="productNameD">Leche deslact: $3.000</h3>
+                        <p class="dpBefore" id="productDescD">Antes $3.400. Descuento de $400</p>
+                        <p class="dpRef" id="productRefD">Ref: 072 - Leche deslactosada Algarra</p>
+                    </div>
+                    <div class="cardBtn">
+                        <button class="btn">
+                            <i class="bi bi-check-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside id="stats">
+            <section id="oneProduct" class="productStats">
+               <article class="productBtns">
+                   <div id="opInfo">
+                       <h3 id="opName">Producto: Panela</h3>
+                       <p id="opRef">Ref: 111 - Panela Cañas de Manizales</p>
+                   </div>
+                   <div id="searchOp-box" >
+                       <input type="text" name="searchOp" id="searchOp" placeholder="Busca por referencia">
+                       <span id="btnSearchOP"><i class="bi bi-search"></i></span>
+                   </div>
+               </article>
+                <div id="opStats">
+                    <canvas id="myChart" width="0" height="400"></canvas>
+                </div>
+            </section>
+            <section id="topProducts" class="productStats">
+                <article class="productBtns">
+                    <h3>Stock y ventas</h3>
+                    <button class="btn" id="verMasSV">Ver más</button>
+                </article>
+                <div class="svCard">
+                    <div class="svLabel">
+                        <div class="labels">
+                            <p class="svProductname">Harina de trigo</p>
+                            <p id="stock">En inventario 21 unidades</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>    
+                    </div>
+                    <p id="" class="svVentas">Ventas 29</p>
+                </div>
+
+                <div class="svCard">
+                    <div class="svLabel">
+                        <div class="labels">
+                            <p class="svProductname">Panela</p>
+                            <p id="stock">En inventario 29 unidades</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 42%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>    
+                    </div>
+                    <p id="" class="svVentas">Ventas 21</p>
+                </div>
+
+                <div class="svCard">
+                    <div class="svLabel">
+                        <div class="labels">
+                            <p class="svProductname">Queso tajado</p>
+                            <p id="stock">En inventario 33 unidades</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 34%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>    
+                    </div>
+                    <p id="" class="svVentas">Ventas 17</p>
+                </div>
+
+                <div class="svCard">
+                    <div class="svLabel">
+                        <div class="labels">
+                            <p class="svProductname">Chocolate</p>
+                            <p id="stock">En inventario 37 unidades</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 26%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>    
+                    </div>
+                    <p id="" class="svVentas">Ventas 13</p>
+                </div>
+
+                <div class="svCard">
+                    <div class="svLabel">
+                        <div class="labels">
+                            <p class="svProductname">Leche entera</p>
+                            <p id="stock">En inventario 42 unidades</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 16%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>    
+                    </div>
+                    <p id="" class="svVentas">Ventas 8</p>
+                </div>
+            </section>
+        </aside>
+        <div class="boxBtn">
+            <div class="aux">
+                <button class="btn" id="btnInvetario">
+                    <div class="icon">
+                        <i class="bi bi-eye-fill"></i>
+                    </div>
+                    <span>Ver inventario</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js" integrity="sha256-7lWo7cjrrponRJcS6bc8isfsPDwSKoaYfGIHgSheQkk=" crossorigin="anonymous"></script>
+<script src="/js/dashboard.js"></script>
