@@ -1,0 +1,111 @@
+#total{
+	width: 100%;
+	height: 30%;
+	vertical-align: sub;
+	background-color:#ed1c27;
+	position: relative;
+	margin-top: 0%;
+}
+
+#total #montoPago{
+	font-size: 45px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	position: relative;
+	margin-top: 0%;
+}
+
+#botones button{
+	background-color: #fffffffd;
+	border: solid 2px #fffffffd;
+	border-radius: 50%;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.botonera{
+	display: flex;
+	justify-content: space-between;
+	width: 96%;
+	margin-left: 2%;
+}
+
+#icono_atras{
+	display: flex;
+	color: #ed1c27;
+	font-size: 350%;
+	margin-top:-10%;
+	justify-content: center;
+}
+
+#totalDavi{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-top: 40%;
+	margin-left: 30%;
+	border: solid 20px #ed1c27;
+	border-radius: 60px;
+	background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 0%);
+	padding: 5px;
+	text-align: center;
+	width: 80%;
+	height: 100px;
+	font-size: 250%;
+}
+.codigoQR{
+	margin-left: -20%;
+}
+
+#img{
+	width: 90%;
+	height: 90%;
+	margin-top: 10%;
+}
+
+
+#botonesBFG{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#botonesBFG button{
+	background-color: #161616;
+	border: solid 2px #161616;
+	border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
+	padding: 10px;
+	color: #fff;
+	font-size: large;
+	width: 15%;
+}
+
+#botonAyuda button{
+	background-color: #ed1c27;
+	border: solid 2px #ed1c27;
+	border-radius: 50%;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.botoneraFooter{
+	display: flex;
+	justify-content: space-between;
+	width: 96%;
+	height: 60px;
+	margin-left: 95%;
+	
+}
+
+#icono_ayuda{
+	display: flex;
+	color: #ffffff;
+	font-size: 300%;
+	margin-top:-10%;
+	justify-content: center;
+}
+
+
+
