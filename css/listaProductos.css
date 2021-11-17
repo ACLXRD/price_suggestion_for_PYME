@@ -1,0 +1,91 @@
+#total{
+	width: 100%;
+	height: 30%;
+	vertical-align: sub;
+	background-color: #83c705;
+	position: relative;
+	margin-top: 0%;
+}
+
+#total #montoPago{
+	font-size: 45px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	position: relative;
+	margin-top: 0%;
+}
+
+#botones button{
+	background-color: #c6f19efd;
+	border: solid 2px #c6f19efd;
+	border-radius: 50%;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.botonera{
+	display: flex;
+	justify-content: space-between;
+	width: 96%;
+	margin-left: 2%;
+}
+/*icono home*/
+#icono_home, #icono_save{
+	color: #83c705;
+	font-size: 100%;
+}
+#contenedor{
+	width: 85%;
+	height: 55%;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 3%;
+	overflow-y: scroll;
+}
+/*
+#fondoDiv{
+	background-color: rgb(191, 223, 132);
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 1%;
+
+}*/
+#inputs{
+	margin: 0 auto;
+}
+input{
+	border: solid 2px #83c705;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 0%);
+	padding: 5px;
+	text-align: center;
+}
+
+#botonesBFG{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#botonesBFG button{
+	background-color: #83c705;
+	border: solid 2px #83c705;
+	border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
+	padding: 10px;
+	color: #fff;
+	font-size: large;
+	width: 8%;
+}
+#referencia{
+	border: solid 2px #83c705;
+	border-radius: 5px;
+    outline: none;
+    padding: 0px;
+    width: 0%;
+	position: relative;
+	margin-left: 5%;
+}

@@ -1,0 +1,92 @@
+#mitadArriba{
+	background-image: url("mercadoMitad.jpg"); 
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 100% 50%;
+	background-position: initial;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 50%;
+	margin-top: 0%;
+}
+/*estilo de oscurecer el fondo*/
+#mitadArriba:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.527);
+}
+#mitadArriba #nomTienda {
+	font-size: 30px;
+	text-align: left;
+	color: #fff;
+	position: relative;
+	margin-top: 1%;
+	margin-left: 2%;
+}
+
+body{
+	background-color: ivory;
+}
+#mitadArriba  #msmPromocion{
+	font-size: 35px;
+	margin-top: 5%;
+	text-align: center;
+	color: #fff;
+	position: relative
+}
+#divBusqueda{
+	background-color: white;
+	text-align: center;
+	margin: 0 auto;
+	width: 42%;
+	height: 25%;
+	position: relative;
+	margin-top: 5%;
+	text-align: center;
+	margin-left: 29%;
+	border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
+    display: inline-block;
+}
+.uibutton{
+	cursor: pointer;
+}
+#divBusqueda input{
+	border: solid 2px #83c705;
+	border-radius: 5px;
+	margin-top: 4%;
+    outline: none;
+    padding: 8px;
+    width: 70%;
+	
+}
+#btnBuscarP{
+	background-color: #83c705;
+	border: solid 2px #83c705;
+	border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
+	padding: 8px;
+	color: #fff;
+	margin: 0 auto;
+}
+#mitadAbajo{
+	width: 100%;
+	height: 50%;
+	text-align: center;	
+	margin-top: 5%;
+}
+#botones button{
+	background-color: #83c705;
+	border: solid 2px #83c705;
+	border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
+	padding: 45px;
+	color: #fff;
+	font-size: large;
+}
+
