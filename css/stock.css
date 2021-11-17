@@ -15,14 +15,50 @@ nav{
         align-items: center;
         justify-content: center;
         
-
     position: relative;
         bottom: 40px;
 }
-#searchItem{
+#searchItem::placeholder{
+    color: var(--bs-gray);
+}
+#searchItem, #btnSearchItem{
     height: 50%;
 }
-#btnSearch{
+#searchItem:focus {
+    border: 2px solid var(--cta);
+        outline: var(--cta);
+}
+#btnSearchItem{
+    border-radius: 0;
+    font-size: 18px;
+    padding: 0;
+}
+#btnAdd{
     border: none;
+}
 
+.boxShadow{
+    box-shadow: -1px 11px 16px -6px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: -1px 11px 16px -6px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: -1px 11px 16px -6px rgba(0, 0, 0, 0.15);
+}
+.cardItem{
+    background-color: white;
+    
+    display: grid;
+        grid-template-columns: 2fr 7fr 1fr auto auto;
+        gap: 10px;
+        align-items: center;
+        
+    width: 80%;
+        margin: auto;
+        padding: 10px 30px; 
+}
+.cardItem input{
+    border: 1px solid var(--cta);
+    height: 70%;
+    padding: 3px 5px;
+}
+.cardItem input::placeholder{
+    color: var(--bs-gray);
 }

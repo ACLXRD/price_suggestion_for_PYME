@@ -35,7 +35,14 @@ body{
 .btn:hover{
     color: white;
 }
-
+.btnDelete{
+    background-color: var(--bs-red);
+    border-radius: 50%;
+}
+.btnEdit{
+    background-color: var(--bs-yellow);
+    border-radius: 50%;
+}
 
 /* Tamaño del scroll */
 body::-webkit-scrollbar {
