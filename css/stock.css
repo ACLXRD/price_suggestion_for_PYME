@@ -1,0 +1,28 @@
+nav{
+    height: 25vh;
+    padding-bottom: 5vh ;
+}
+#search-box{
+    background-color: white;
+    height: 70px;
+    width: 80%;
+        margin: auto;
+        padding-left: 30px;
+
+    display: grid;
+        grid-template-columns: 7fr 3fr 1fr;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        
+
+    position: relative;
+        bottom: 40px;
+}
+#searchItem{
+    height: 50%;
+}
+#btnSearch{
+    border: none;
+
+}

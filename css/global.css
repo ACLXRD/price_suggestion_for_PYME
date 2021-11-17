@@ -1,0 +1,99 @@
+:root{
+    --bk: #ECEFF1;
+    --txt: #142229;
+    --cta: #80BC00;
+    --ctat:rgba(128, 188, 0, 0.342);
+    --ctah: rgb(137, 196, 10);
+}
+*{
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: var(--bk);
+    color: var(--txt);
+    font-family: 'Roboto', sans-serif;
+}
+.brd{
+    border: 1px solid red;
+}
+.btn{
+    background-color: var(--cta);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    transition: .3s ease all;
+}
+.btn:hover{
+    color: white;
+}
+
+
+/* Tamaño del scroll */
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+/* Estilos barra (thumb) de scroll */
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--bk);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+body::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover, 
+body::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
+nav{
+    background-color: var(--cta);
+    color: white;
+    
+    display: grid;
+        grid-template-columns: 10% 1fr;
+        align-items: center;
+    
+    height: 15vh;
+    text-align: center;
+}
+
+.btnHome{
+    background-color: var(--bk);
+    color: var(--cta);
+    font-size: 35px;
+
+    border: none;
+        border-radius: 50%;
+    padding: 5px 15px;
+}
+.nav-Box2 h1{
+    width: 90%;
+
+}
+.cardBtn button{
+    border-radius: 50%;
+    font-size: 20px;
+    margin: auto;
+}
