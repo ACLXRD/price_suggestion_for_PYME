@@ -46,13 +46,13 @@ nav{
     background-color: white;
     
     display: grid;
-        grid-template-columns: 2fr 7fr 1fr auto auto;
+        grid-template-columns: 2fr 6fr 2fr 1fr auto auto auto;
         gap: 10px;
         align-items: center;
         
     width: 80%;
         margin: auto;
-        padding: 10px 30px; 
+        padding: 10px 30px 0 30px; 
 }
 .cardItem input{
     border: 1px solid var(--cta);
@@ -61,4 +61,7 @@ nav{
 }
 .cardItem input::placeholder{
     color: var(--bs-gray);
+}
+.cardItem button{
+    margin-bottom: 13px;
 }

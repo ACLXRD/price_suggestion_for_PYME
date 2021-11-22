@@ -24,9 +24,6 @@ const myChart = new Chart(ctx, {
     }
 });
 // Buttons links
-const index = document.getElementsByClassName("btnHome")[0].onclick = () =>{
-    location.href = "index.html";
-};
 const stock = document.getElementById("btnInvetario").onclick = () =>{
     location.href = "stock.html";
 };
